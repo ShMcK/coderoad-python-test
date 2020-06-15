@@ -1,7 +1,10 @@
 # Solution 
 def add(*args):
     '''Add 1 or more numbers together'''
-    return 0
+    total = 0
+    for arg in args:
+        total += arg
+    return total
 
 def main():
     print('add(1) = ' + str(add(1)))
