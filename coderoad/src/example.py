@@ -1,4 +1,3 @@
-# Solution 
 def add(*args):
     '''Add 1 or more numbers together'''
     sum = 0
