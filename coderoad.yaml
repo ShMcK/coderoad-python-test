@@ -36,7 +36,7 @@ config:
     ##
     uri: "https://github.com/beaucarnes/coderoad-python-test"
     ## The branch on the repo uri that contains the code commits. Required.
-    branch: ""
+    branch: "v0.1.0"
 
   ## A list of tutorial dependencies to ensure the environment is setup for the tutorial. Optional.
   ## The dependencies will be checked by running `dependency.name` --version and comparing it to the version provided.
@@ -57,6 +57,6 @@ levels:
         ## Setup for the first task. Required.
         setup:
         ## Solution for the first task. Required.
-        solution:
+          subtasks: false
 
       
