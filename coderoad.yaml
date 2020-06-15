@@ -15,7 +15,7 @@ config:
       ## The command arg used to convert test runner output to TAP format. See https://testanything.org/ for more. Required.
       tap: -m tap.py
     ## The directory where to run the test runner from. If not specified, tests will run from the root of the project. Optional.
-    directory: tests
+    directory: coderoad-starter
     ## Commits to load to setup the test runner. Optional.
     ##
     setup:

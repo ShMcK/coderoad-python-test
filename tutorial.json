@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "summary": {
+    "title": "Insert Tutorial's Title here",
+    "description": "Short description to be shown as a tutorial's subtitle"
+  },
+  "config": {
+    "testRunner": {
+      "command": "python",
+      "args": {
+        "tap": "-m tap.py"
+      },
+      "directory": "tests",
+      "setup": {
+        "commands": [
+          "python3 -m venv tutorial-env",
+          "source tutorial-env/bin/activate",
+          "pip install requirements.txt"
+        ],
+        "commits": [
+          "124dc3ecb8b9d9e1a152ad6152aa1e143c62b175"
+        ]
+      }
+    },
+    "appVersions": {
+      "vscode": ">=0.7.2"
+    },
+    "repo": {
+      "uri": "https://github.com/beaucarnes/coderoad-python-test",
+      "branch": "v0.1.0"
+    },
+    "dependencies": []
+  },
+  "levels": [
+    {
+      "id": "L1",
+      "steps": [
+        {
+          "id": "L1S1",
+          "setup": {
+            "subtasks": false,
+            "commits": [
+              "cf32cb0f46c53fbfe04ecd436d163336ffe7d42c"
+            ]
+          },
+          "solution": {
+            "commits": [
+              "96d2ca15de2e4235e0b02033af0f1376d03f0ea2"
+            ]
+          },
+          "content": "Short description of the step's purpose. Should be short and fit in one line\n\n**Important**\n\n1. Both level and step ids must have an entry with the same id on the configuration file;\n2. Step Ids are based on its level id. Any step from level `L234` must start with `L234S`, followed by the sequential digits."
+        }
+      ],
+      "title": "Put Level's title here",
+      "summary": "Level's summary: a short description of the level's content in one line.",
+      "content": "The level is identified and distributed following the regex:\n\n```js\n/^(##\\s(?<levelId>L\\d+)\\s(?<levelTitle>.*)\\n*(>\\s*(?<levelSummary>.*))?\\n+(?<levelContent>[^]*))/;\n```\n\nThe Level can be split into steps or have no steps. Levels without steps are meant to be used as only informative content, for example: use a Level without steps at the end of the tutorial to congratulate the student and provide some additional related resources.\n\nTutorial's content. It can span through multiple paragraphs and use headers `####` and `#####`.\n\nSteps are identified and their content described using the following regex:\n\n```js\n/^(###\\s(?<stepId>(?<levelId>L\\d+)S\\d+)\\s(?<stepTitle>.*)\\n+(?<stepContent>[^]*))/;\n```\n\nThe numbers identifying the levels and steps are irrelevant but keep in mind that they will be executed in order. A level with id `10` will be executed before another one with id `20` and so on. These `ids` should have a match in the configuration file (`coderoad.yaml`)."
+    }
+  ]
+}
