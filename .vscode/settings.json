@@ -1,0 +1,13 @@
+{
+    "[python]": {
+        "editor.rulers": [
+            72,
+            79
+        ],
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "python.linting.pylintEnabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "yapf"
+}
