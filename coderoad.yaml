@@ -23,9 +23,9 @@ config:
       # - commit2
       ## A list of commands to run to configure the tutorial
       commands:
-        - "python3 -m venv tutorial-env"
-        - "source tutorial-env/bin/activate"
-        - "pip install requirements.txt"
+        - python3 -m venv tutorial-env
+        - source tutorial-env/bin/activate
+        - pip install requirements.txt
         # - npm install
   ## App versions helps to ensure compatability with the Extension
   appVersions:
