@@ -6,30 +6,25 @@
   },
   "config": {
     "testRunner": {
-      "command": "python",
+      "command": "python3 tests/math_test.py",
       "args": {
         "tap": "-m tap.py"
       },
-      "directory": "coderoad-starter",
       "setup": {
         "commands": [
-          "python3 -m venv tutorial-env",
-          "source tutorial-env/bin/activate",
-          "pip install requirements.txt"
+          "mkdir newfoldertotest",
+          "pip3 install -r requirements.txt"
         ],
         "commits": [
-          "124dc3ecb8b9d9e1a152ad6152aa1e143c62b175"
+          "b71226436aea9854a0bd5f5984d9cb549a513471"
         ]
-      }
-    },
-    "appVersions": {
-      "vscode": ">=0.7.2"
+      },
+      "directory": "coderoad-starter"
     },
     "repo": {
       "uri": "https://github.com/beaucarnes/coderoad-python-test",
       "branch": "v0.1.0"
-    },
-    "dependencies": []
+    }
   },
   "levels": [
     {
@@ -40,12 +35,12 @@
           "setup": {
             "subtasks": false,
             "commits": [
-              "cf32cb0f46c53fbfe04ecd436d163336ffe7d42c"
+              "0a5bae6d99d13042a448d67f7e6910bd0a75cd9c"
             ]
           },
           "solution": {
             "commits": [
-              "96d2ca15de2e4235e0b02033af0f1376d03f0ea2"
+              "2ead3294f7f42f240b871616709e1ea45e2cd169"
             ]
           },
           "content": "Short description of the step's purpose. Should be short and fit in one line\n\n**Important**\n\n1. Both level and step ids must have an entry with the same id on the configuration file;\n2. Step Ids are based on its level id. Any step from level `L234` must start with `L234S`, followed by the sequential digits."
