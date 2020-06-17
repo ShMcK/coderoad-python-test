@@ -1,15 +1,13 @@
 version: '0.1.0'
 config:
   testRunner:
-    command: python
+    command: python3 tests/math_test.py
     args:
       tap: -m tap.py
     setup:
       commands:
         - mkdir newfoldertotest
-        - python3 -m venv tutorial-env
-        - source tutorial-env/bin/activate
-        - pip install requirements.txt
+        - pip3 install requirements.txt
     directory: coderoad-starter
   repo: 
     uri: https://github.com/beaucarnes/coderoad-python-test
