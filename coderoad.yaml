@@ -7,7 +7,7 @@ config:
     setup:
       commands:
         - mkdir newfoldertotest
-        - pip3 install requirements.txt
+        - pip3 install -r requirements.txt
     directory: coderoad-starter
   repo: 
     uri: https://github.com/beaucarnes/coderoad-python-test
