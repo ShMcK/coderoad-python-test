@@ -15,5 +15,6 @@ levels:
     steps:
       - id: L1S1
         setup:
-          subtasks: false
+          files:
+            - src/example.py
           
