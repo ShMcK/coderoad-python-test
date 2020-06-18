@@ -1,17 +1,15 @@
 version: '0.1.0'
 config:
   testRunner:
-    command: python3 tests/math_test.py
+    command: python3 -m tap tests/*_test.py
     args:
-      tap: -m tap.py
+      tap: ''
     setup:
       commands:
-        - mkdir newfoldertotest
         - pip3 install -r requirements.txt
-    directory: coderoad
   repo: 
-    uri: https://github.com/beaucarnes/coderoad-python-test
-    branch: v0.1.0
+    uri: https://github.com/shmck/coderoad-python-test
+    branch: v0.1.1
 levels:
   - id: L1
     steps:
