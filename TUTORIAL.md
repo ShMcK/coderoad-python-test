@@ -2,7 +2,7 @@
 
 A test to try Python with CodeRoad
 
-## L1 Add some numbers together
+## 1. Add some numbers together
 
 > Test out the basics
 
@@ -19,7 +19,7 @@ def add(*args):
     return total
 ```
 
-### L1S1 Add
+### 1.1 Add
 
 Complete the `add` function. It should be able to add one or more numbers together. 
 For example: `add(1) = 1`, `add(1, 2) = 3`, and `add(1, 2, 3) = 6`.

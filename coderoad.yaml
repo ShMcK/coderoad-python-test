@@ -1,4 +1,4 @@
-version: '0.1.0'
+version: '0.1.1'
 config:
   testRunner:
     command: python3 -m tap tests/*_test.py
@@ -11,9 +11,9 @@ config:
     uri: https://github.com/shmck/coderoad-python-test
     branch: v0.1.1
 levels:
-  - id: L1
+  - id: '1'
     steps:
-      - id: L1S1
+      - id: '1.1'
         setup:
           files:
             - src/example.py

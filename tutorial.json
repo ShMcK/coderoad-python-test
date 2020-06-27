@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": {
     "title": "Basic Python Example",
     "description": "A test to try Python with CodeRoad"
@@ -15,7 +15,7 @@
           "pip3 install -r requirements.txt"
         ],
         "commits": [
-          "36eba566e39d46c388f5ba78b48a6e7ba41b01c4"
+          "beeffe8bdce05a7ddc3fdd8822581a0a4db3c43f"
         ]
       }
     },
@@ -26,29 +26,29 @@
   },
   "levels": [
     {
-      "id": "L1",
+      "id": "1",
+      "title": "Add some numbers together",
+      "summary": "Test out the basics",
+      "content": "This is just a test, so here's the answer:\n\n```py\ndef add(*args):\n    '''Add 1 or more numbers together'''\n    total = 0\n    for arg in args:\n        total += arg\n    return total\n```",
       "steps": [
         {
-          "id": "L1S1",
+          "id": "1.1",
           "setup": {
             "files": [
               "src/example.py"
             ],
             "commits": [
-              "2e9f2fd92f0b7b8854e3d7bf47ae8c6787800066"
+              "03ca32012287bb9e32723442bb8bbd7582bda236"
             ]
           },
+          "content": "Complete the `add` function. It should be able to add one or more numbers together. \nFor example: `add(1) = 1`, `add(1, 2) = 3`, and `add(1, 2, 3) = 6`.",
           "solution": {
             "commits": [
-              "cdbe4321b9c88a0067de3f65279ab9fb54a225e2"
+              "3c77a83d44f0aabe7f72152dfda117e7ac25a5b2"
             ]
-          },
-          "content": "Complete the `add` function. It should be able to add one or more numbers together. \nFor example: `add(1) = 1`, `add(1, 2) = 3`, and `add(1, 2, 3) = 6`."
+          }
         }
-      ],
-      "title": "Add some numbers together",
-      "summary": "Test out the basics",
-      "content": "This is just a test, so here's the answer:\n\n```py\ndef add(*args):\n    '''Add 1 or more numbers together'''\n    total = 0\n    for arg in args:\n        total += arg\n    return total\n```"
+      ]
     }
   ]
 }
