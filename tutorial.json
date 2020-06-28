@@ -6,9 +6,10 @@
   },
   "config": {
     "testRunner": {
-      "command": "python3 -m tap tests/*_test.py",
+      "command": "python3",
       "args": {
-        "tap": ""
+        "tap": "-m tap tests/*_test.py",
+        "filter": "--match"
       },
       "setup": {
         "commands": [
