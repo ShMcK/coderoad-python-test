@@ -1,9 +1,10 @@
 version: '0.1.1'
 config:
   testRunner:
-    command: python3 -m tap tests/*_test.py
+    command: python3
     args:
-      tap: ''
+      tap: -m tap tests/*_test.py
+      filter: --match
     setup:
       commands:
         - pip3 install -r requirements.txt
