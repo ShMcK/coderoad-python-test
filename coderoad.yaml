@@ -5,9 +5,9 @@ config:
     args:
       tap: -m tap tests/*_test.py
       filter: --match
-    setup:
-      commands:
-        - pip3 install -r requirements.txt
+  setup:
+    commands:
+      - pip3 install -r requirements.txt
   repo: 
     uri: https://github.com/shmck/coderoad-python-test
     branch: v0.1.1

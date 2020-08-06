@@ -10,15 +10,15 @@
       "args": {
         "tap": "-m tap tests/*_test.py",
         "filter": "--match"
-      },
-      "setup": {
-        "commands": [
-          "pip3 install -r requirements.txt"
-        ],
-        "commits": [
-          "beeffe8bdce05a7ddc3fdd8822581a0a4db3c43f"
-        ]
       }
+    },
+    "setup": {
+      "commands": [
+        "pip3 install -r requirements.txt"
+      ],
+      "commits": [
+        "beeffe8bdce05a7ddc3fdd8822581a0a4db3c43f"
+      ]
     },
     "repo": {
       "uri": "https://github.com/shmck/coderoad-python-test",
